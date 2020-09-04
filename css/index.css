@@ -1,0 +1,572 @@
+@font-face {
+  src: url("../fonts/Yekan.woff");
+  font-family: "yekan";
+}
+
+@font-face {
+  src: url("../fonts/IRANSansWeb\(FaNum\)\ \(1\).woff2");
+  font-family: "iransans";
+}
+
+@font-face {
+  src: url("../fonts/Shabnam.woff2");
+  font-family: "shabnam";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "yekan";
+  direction: rtl;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin: 0 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+header .navbar-logo {
+  margin: auto 0;
+}
+
+header .navbar-logo img {
+  object-fit: cover;
+  width: 300px;
+}
+
+.title-collection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.title-collection li {
+  height: 50px;
+  background: #1268a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  border-radius: 2px;
+}
+
+.title-collection li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.title-collection li:first-child {
+  background: #25aae1;
+}
+
+.title-collection li:last-child {
+  background: #03851f;
+}
+
+.course-section {
+  padding: 50px 0;
+  background: #f8f9fa;
+  margin-top: 50px;
+}
+
+.course-section .course-section-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  word-spacing: 2px;
+}
+
+.course-section .course-section-search,
+.subjects .subjects-input {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.course-section .course-section-search button,
+.subjects .subjects-input button {
+  height: 50px;
+  width: 90px;
+  border: none;
+  background: #005691;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.course-section .course-section-search input,
+.subjects .subjects-input input {
+  height: 50px;
+  width: 300px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 2px 1px #ccc;
+  margin: 0 5px;
+  font: inherit;
+  padding: 0 10px;
+}
+
+.course-section .course-section-search input:focus {
+  outline: none;
+}
+
+.course-section .course-section-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-section .course-section-suggestion {
+  width: 500px;
+  margin-left: 20px;
+}
+
+.course-section .course-section-suggestion h1 {
+  font-size: 20px;
+  color: #005691;
+}
+
+.course-section .course-section-suggestion p {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.course-section .course-section-suggestion .button-group button {
+  padding: 5px 15px;
+  font: inherit;
+  font-size: 15px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.course-section .course-section-suggestion .button-group button:first-child {
+  background: #83c11f;
+}
+
+.course-section .course-section-suggestion .button-group button:last-child {
+  background: #197294;
+}
+
+.course-section .course-section-content ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 1800px;
+  flex-wrap: wrap;
+  direction: ltr;
+}
+
+.course-section .course-section-content ul li:hover {
+  transform: scale(1.1);
+}
+
+.course-section .course-section-content ul li img {
+  object-fit: cover;
+  width: 90% !important;
+  height: 75% !important;
+}
+
+.course-section .course-section-content ul li {
+  height: 120px;
+  width: 110px;
+  padding: 15px 0;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 0 5px 1px #ccc;
+  font-size: 13px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  margin: 8px 0;
+  color: #888;
+  font-weight: 800;
+  transition: 0.3s all;
+}
+
+.course-section .course-section-content ul li img {
+  height: 50px;
+  width: 50px;
+}
+
+.course-archive {
+  padding: 40px 0;
+}
+
+.course-archive .course-archive-title {
+  display: flex;
+  align-items: center;
+  color: #005691;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #0057919a;
+}
+
+.course-archive .course-archive-content {
+  direction: ltr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.course-archive .course-archive-content .card {
+  height: 240px;
+  margin: 30px 0;
+  width: 220px;
+  background: #fff;
+  box-shadow: 0 0 5px 1px #ccc;
+}
+
+.course-archive .course-archive-content .card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.course-archive .course-archive-content .card h5 {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  font-family: "shabnam";
+  font-weight: 100;
+  color: #005691;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-archive .course-archive-content .card .button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px;
+  margin-top: 10px;
+}
+
+.course-archive .course-archive-content .card .button-group button {
+  height: 30px;
+  width: 100px;
+  font-family: "iransans";
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+}
+
+.course-archive .course-archive-content .card .button-group button:first-child {
+  color: #005691;
+  background: #eee;
+}
+
+.course-archive
+  .course-archive-content
+  .card
+  .button-group
+  button:nth-child(2) {
+  color: #fff;
+  background: #166ca7;
+}
+
+.course-archive .course-archive-title h3 {
+  font-weight: 100;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.subjects {
+  margin: 20px auto;
+}
+
+.course-archive .course-archive-title img {
+  height: 50px;
+  width: 50px;
+}
+
+.subjects .subjects-body {
+  border: 2px solid #0057919a;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.subjects .subjects-body ul {
+  display: flex;
+  list-style: none;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.subjects .subjects-body ul li {
+  height: 44px;
+  background: #93bad5;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subjects .subjects-body h5 {
+  font-family: "shabnam";
+  font-weight: 100;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.subjects .subjects-body input {
+  width: 450px;
+}
+
+.subjects .subjects-title p {
+  color: #1268a3;
+  word-spacing: 3px;
+  font-size: 20px;
+  font-family: "shabnam";
+  padding-bottom: 15px;
+}
+
+.aboutUS {
+  margin: 50px auto;
+}
+
+.aboutUS ul {
+  margin-top: 30px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.aboutUS ul li {
+  width: 270px;
+  font-family: "shabnam";
+  line-height: 35px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.aboutUS ul li div {
+  text-align: center;
+}
+
+.aboutUS ul li div img {
+  height: 50px;
+  object-fit: cover;
+}
+
+.aboutUS h1 {
+  text-align: center;
+  font-size: 23px;
+  color: #084d83;
+}
+
+.aboutUS ul li div ~ p {
+  margin: 10px 0;
+}
+
+.aboutUS ul li p a {
+  text-decoration: none;
+  color: #166ca7;
+}
+
+.product .product-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.product .product-content ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.product {
+  font-family: "shabnam";
+  background: #f8f9fa;
+  padding: 20px 0;
+}
+
+.product .product-content {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.product .about {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+
+.product .about ul:first-child {
+  list-style: none;
+  width: 200px;
+}
+
+.product .about ul li {
+  padding: 5px 0;
+  font-size: 13px;
+}
+
+.product .about ul:first-child li {
+  color: #1e88e5;
+}
+
+.product .about ul li:first-child {
+  font-size: 17px;
+  font-weight: 900;
+  border-bottom: 1px solid #eee;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.product .about ul {
+  list-style: none;
+}
+
+.product .about ul li:nth-child(2) {
+  padding-top: 10px;
+}
+
+.product .about ul:nth-child(2) li:nth-child(2) {
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.product .about ul:nth-child(2) {
+  width: 400px;
+}
+
+.product .about ul:nth-child(3) {
+  width: 300px;
+}
+
+.product .product-content ul li {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.product .product-content ul li:first-child {
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.product .about ul:nth-child(3) li .about-input {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.product .about ul:nth-child(3) li .about-input button {
+  height: 35px;
+  width: 80px;
+  font: inherit;
+  border: none;
+  background: #1268a3;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.product .about ul:nth-child(3) li .about-input input {
+  width: 170px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #eee;
+  font: inherit;
+}
+
+.product .about ul:nth-child(3) li .about-input input:focus {
+  outline: none !important;
+}
+
+.product .about ul:nth-child(3) li .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.product .about ul:nth-child(2) li a {
+  text-decoration: none;
+  color: #25aae1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #005691;
+  padding: 20px;
+}
+
+footer img {
+  height: 20px;
+  object-fit: cover;
+  margin: 0 10px;
+}
+
+.product .about ul:nth-child(3) li .social img {
+  width: 90px;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  align-items: center;
+  box-shadow: 0 0 5px 1px #ccc;
+  transition: 0.3s all;
+}
+
+.navbar-fixed a img {
+  width: 120px;
+}
+
+.navbar-fixed a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
